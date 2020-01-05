@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas:
+          "notification notification"
+          "user         conversation"
+          "contacts     conversation";
+  grid-template-rows: auto 10ch 1fr;
+  grid-template-columns: 40ch auto;
+
+  .notification {
+    grid-area: notification;
+    background-color: #ffd200;
+  }
+
+  .user {
+    grid-area: user;
+    background-color: #0096ff;
+  }
+
+  .contacts {
+    grid-area: contacts;
+    background-color: #5684ab;
+  }
+
+  .conversation {
+    grid-area: conversation;
+    background-color: #b7bac0;
+  }
+
+}
+
+
+
+
+
